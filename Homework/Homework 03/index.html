@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Board</title>
+    <style>
+       .outer-border {
+            border: 5px solid black; 
+            padding: 5px; 
+            display: inline-block; 
+        }
+
+      table {
+    border-collapse: separate; 
+    border-spacing: 5px; 
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    border: 2px solid darkgray; 
+  }
+      td {
+          border: 1px solid black;
+          width: 40px;
+          height: 40px;
+      }
+      
+      .red-home {
+          background-color: red;
+      }
+      .green-home {
+          background-color: green;
+      }
+      .yellow-home {
+          background-color: yellow;
+      }
+      .blue-home {
+          background-color: blue;
+      }
+     
+      .center {
+          background-color: gray;
+      }
+      .path {
+          background-color: white;
+      }
+      .safe {
+            background-color: lightblue;
+            position: relative; 
+        }
+        .safe::before {
+            content: "";
+            position: absolute;
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: 2px solid black; 
+            border-radius: 50%; 
+            box-sizing: border-box; 
+        }
+  </style>
+</head>
+<body>
+
+  <div class="outer-border"> 
+    <table>
+       
+    <tr>
+      <td class="red-home"></td>
+      <td class="red-home"></td>
+      <td class="path" colspan="2" rowspan="2"></td> 
+      <td class="safe"></td>
+      <td class="safe"></td>
+      <td class="safe">START</td>
+      <td class="path" colspan="2" rowspan="2"></td>
+      <td class="blue-home"></td>
+      <td class="blue-home"></td>
+  </tr>
+  
+ 
+  <tr>
+      <td class="red-home"></td>
+      <td class="red-home"></td>
+      <td class="safe"></td>
+      <td class="blue-home"></td>
+      <td class="safe"></td>
+      
+      <td class="blue-home"></td>
+      <td class="blue-home"></td>
+       </tr>
+
+       
+        <tr>
+          <td class="path" colspan="4" rowspan="2"></td>  
+            <td class="safe"></td>
+            <td class="blue-home"></td>
+            <td class="safe"></td>
+            <td class="path" colspan="4" rowspan="2"></td> 
+        </tr>
+
+      
+        <tr>
+            
+            <td class="safe"></td>
+            <td class="blue-home"></td>
+            <td class="safe"></td>
+           
+        </tr>
+
+        <tr>
+            <td class="safe">START</td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            <td class="blue-home"></td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+        </tr>
+
+       
+        <tr>
+            <td class="safe"></td>
+            <td class="red-home"></td>
+            <td class="red-home"></td>
+            <td class="red-home"></td>
+            <td class="red-home"></td>
+            <td class="path"></td>
+            <td class="green-home"></td>
+            <td class="green-home"></td>
+            <td class="green-home"></td>
+            <td class="green-home"></td>
+            <td class="safe"></td>
+        </tr>
+
+       
+        <tr>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            <td class="yellow-home"></td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            <td class="safe">START</td>
+        </tr>
+
+       
+        <tr>
+          <td class="path" colspan="4" rowspan="2"></td> 
+            <td class="safe"></td>
+            <td class="yellow-home"></td>
+            <td class="safe"></td>
+            <td class="path" colspan="4" rowspan="2"></td>
+        </tr>
+
+       
+        <tr>
+            
+            <td class="safe"></td>
+            <td class="yellow-home"></td>
+            <td class="safe"></td>
+            
+        </tr>
+
+       
+        <tr>
+            <td class="green-home"></td>
+            <td class="green-home"></td>
+            <td class="path" colspan="2" rowspan="2"></td> 
+            <td class="safe"></td>
+            <td class="yellow-home"></td>
+            <td class="safe"></td>
+            <td class="path" colspan="2" rowspan="2"></td>
+            <td class="yellow-home"></td>
+            <td class="yellow-home"></td>
+        </tr>
+
+       
+        <tr>
+            <td class="green-home"></td>
+            <td class="green-home"></td>
+           
+            <td class="safe">START</td>
+            <td class="safe"></td>
+            <td class="safe"></td>
+            
+            <td class="yellow-home"></td>
+            <td class="yellow-home"></td>
+        </tr>
+    </table>
+  </div>
+
+</body>
+</html>
