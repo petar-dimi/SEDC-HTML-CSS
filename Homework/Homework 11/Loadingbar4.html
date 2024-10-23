@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> <!-- Include Roboto font -->
+  <style>
+    /* Red background covering the entire viewport */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(184, 41, 41);
+    }
+
+    /* Container for the loading bar */
+    .loading-bar-container {
+      position: relative;
+      width: 300px; /* Width of the loading bar */
+    }
+
+    /* Main loading bar */
+    .loading-bar {
+      position: relative;
+      height: 50px; /* Height of the loading bar */
+      background-color: rgb(172, 21, 21); /* Background color of the loading bar */
+      color: white; /* Text color */
+      font-size: 28px; /* Font size */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Roboto', sans-serif; /* Set the font to Roboto */
+      font-weight: 300; /* Thinner font weight */
+      border: 2px solid transparent; /* Transparent border */
+    }
+
+    /* Upper filling white bar */
+    .fill-upper {
+      position: absolute;
+      top: -20px; /* Position at the top edge of the main loading bar */
+      left: 0;
+      height: 20px; /* Height of the upper loading bar */
+      width: 0; /* Start with 0 width */
+      background-color: white; /* Fill color */
+      animation: fill 3s linear infinite; /* Loading bar animation */
+    }
+
+    /* Lower filling white bar */
+    .fill-lower {
+      position: absolute;
+      bottom: -20px; /* Position a little lower than the main loading bar */
+      left: 0;
+      height: 20px; /* Height of the lower loading bar */
+      width: 0; /* Start with 0 width */
+      background-color: white; /* Fill color */
+      animation: fill 3s linear infinite; /* Loading bar animation */
+    }
+
+    /* Animation for the loading bars */
+    @keyframes fill {
+      0% {
+        width: 0; /* Start with 0 width */
+      }
+      100% {
+        width: 100%; /* Fill to 100% width */
+      }
+    }
+  </style>
+  <title>Loading Animation</title>
+</head>
+<body>
+
+  <!-- Loading bar container -->
+  <div class="loading-bar-container">
+    <div class="fill-upper"></div> <!-- Upper filling white bar -->
+    <div class="loading-bar">
+      LOADING...
+    </div>
+    <div class="fill-lower"></div> <!-- Lower filling white bar -->
+  </div>
+
+</body>
+</html>
